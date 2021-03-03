@@ -1,6 +1,7 @@
 {  
     "block": {  
-        "name":       "block1",   
-        "integer":      56,    
+        "blockID":  "",
+        "deviceName":   "computer A",
+        "integer":  56,    
     }  
 }  
