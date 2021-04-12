@@ -358,7 +358,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
+/*   background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat; */
+  background: #f5f8fd url("https://viewbug_com.s3.amazonaws.com/media/images/contests/contest7861_banner.jpg") center top no-repeat;
   background-size: cover;
   padding-top: 110px;
 }
