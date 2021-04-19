@@ -86,7 +86,6 @@
 
           <div class="col-lg-5 col-md-6">
             <br>  <!-- for UI spacing purposes -->
-            <br> <!-- for UI spacing purposes -->
             <div class="about-img" data-aos="fade-right" data-aos-delay="100">
               <img src="https://www.ceotodaymagazine.com/CEO-Today/wp-content/uploads/2019/06/The-Worst-Computer-Viruses-in-History.jpg" alt="">
             </div>
@@ -106,7 +105,7 @@
                  <a href="https://cyware.com/news/heres-a-look-back-at-data-breaches-in-2019-that-occurred-due-to-rogue-employees-f8fa4ff9">rogue employees</a>,
                  or are most commonly 
                  <a href="https://www.statista.com/statistics/273550/data-breaches-recorded-in-the-united-states-by-number-of-breaches-and-records-exposed/">hacked</a> due to a single point of failure.</p>
-              <p>The latter of which is frequently observed among IoT devices.</p>
+              <!-- <p>The latter of which is frequently observed among IoT devices.</p> -->
               </div>
           </div>
       
@@ -157,7 +156,7 @@
             <div class="about-content" data-aos="fade-right" data-aos-delay="100">
               <h2>A Potential Solution</h2>
               <h3>A special database relying on cryptography to ensure data integrity</h3>
-              <p>Think of a database that has multiple copies of itself. All of which automatically update in unison. If one copy gets tampered with then all of the other copies could highlight this discrepancy so that the database could be resynchronized—and therefore resecured—before continuing. This way it would prevent a bad actor from accessing the database and would allow the user to be aware of any attacks.</p>
+              <p>Think of a database that has multiple copies of itself. All of which automatically update in unison. If one copy gets tampered with then all of the other copies could highlight this discrepancy so that the database could be resynchronized—and therefore resecured—before continuing. Not only would this prevent a bad actor from accessing the database, but it also maintains the integrity of the data since it hasn't been tampered with.</p>
             </div>
           </div>
 
@@ -180,8 +179,6 @@
         <div class="row feature-item">
 
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <br> <!-- for UI spacing purposes -->
-            <br> <!-- for UI spacing purposes -->
             <img src="https://economictimes.indiatimes.com/thumb/msid-81993233,width-1200,height-900,resizemode-4,imgsize-753834/blockchain-getty.jpg?from=mdr" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0" data-aos="fade-left" data-aos-delay="150">
@@ -190,7 +187,7 @@
               Blockchain technology is essentially a database/ledger that has copies of itself stored on multiple devices (ie, servers, computers, IoT devices) within a specific network. Each of these devices is a <i>node</i>.
             </p>
             <p>
-              The nodes hosting the ledger are distributed to varying extents so that they exist independently of one another. In order for updates to occur to the ledger, the majority of these nodes must verify the legitimacy of the proposed changes.
+              The nodes hosting the ledger are distributed to varying extents so that they exist independently of one another. In order for updates to occur to the ledger, these nodes must verify the proposed changes. To do so, the majority of the nodes must agree that the proposed changes are legitimate.
             </p>
             <p>
               Upon verification, the new data is packaged into a <i>block</i> that is crpytographically encrpyted or hashed. This secure block is then chained onto the end of the existing blockchain. Note that every block is immutable.
@@ -216,41 +213,41 @@
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-aos="zoom-in" data-aos-delay="100">
             <div class="box">
-              <h4 class="title">256-Bit Encryption</h4>
-              <p class="description">It would theoretically take the average computer a few decades to crack the cryptography algorithm that protects the blockchain</p>
+              <h4 class="title">Crpytographic Keys/Hashs</h4>
+              <p class="description">Only those equipped with a specific private key can decrypt [& encrypt] specific data. In cases where you care more about the validity of the data rather than the content of the data itself, hashing is used since it represents the authenticity of the encrypted data without having to unencrypt it</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="box">
-              <h4 class="title">Distributed Ledger</h4>
-              <p class="description">Centralized ledgers introduce a single point of failure since hacking a part of the network often allows you to breach other parts as well. By distributing the nodes away from a centralized entity it increases the difficulty for hijacking the network</p>
+              <h4 class="title">Merkle Trees</h4>
+              <p class="description">The output from one equation is the input for the next and so forth. The result is a chain of equations linked together. If any one equation is altered the entire chain is affected. This is the process behind hashing which enables immutability & creates the chain itself</p>  
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="box">
-              <h4 class="title">Immutable History</h4>
-              <p class="description">Every action on the blockchain is recorded and cannot be reformed. An affordance of this immutability is that the integrity of the data is always maintained</p>
+              <h4 class="title">Distributed Ledger</h4>
+              <p class="description">Centralized ledgers introduce a single point of failure since hacking a part of the network often allows you to breach other parts as well. By distributing the nodes away from a centralized entity it increases the difficulty for hijacking the network</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow" data-aos="zoom-in" data-aos-delay="100">
             <div class="box">
-              <h4 class="title">Crpytographic Keys/Hashs</h4>
-              <p class="description">Only those equipped with a specific private key can decrypt [& encrypt] specific data. In cases where you care more about the validity of the data rather than the content of the data itself, hashing is used since it represents the authenticity of the encrypted data without having to unencrypt it</p>
+              <h4 class="title">256-Bit Encryption</h4>
+              <p class="description">It would theoretically take the average computer a few decades to crack the cryptography algorithm that protects the blockchain</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200"">
             <div class=" box">
-            <h4 class="title">Byzantine Fault Tolerance</h4>
-            <p class="description">To modify the data, 51% of the nodes must accept the data as valid. Consequently, you would need to gain majority control of the nodes at the same time in order to falsify data</p>
+              <h4 class="title">Immutable History</h4>
+              <p class="description">Every action on the blockchain is recorded and cannot be reformed. An affordance of this immutability is that the integrity of the data is always maintained</p>
             </div>
           </div>
+
         <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
           <div class="box">
-            
-            <h4 class="title">Merkle Trees</h4>
-            <p class="description">The output from one equation is the input for the next and so forth. The result is a chain of equations linked together. If any one equation is altered the entire chain is affected. This is the process behind hashing which enables immutability & creates the chain itself</p>
+            <h4 class="title">Byzantine Fault Tolerance</h4>
+            <p class="description">To add to the blockchain, 51% of the nodes must accept the new data as valid. Consequently, you would need to gain majority control of the nodes at the same time in order to falsify data</p>
           </div>
         </div>
 
@@ -264,23 +261,40 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row feature-item mt-5 pt-5">
+          
           <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
             <img src="https://inc42.com/wp-content/uploads/2019/12/blockchain-facts.jpg" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="150">
-            <h3 style='color: #555186'>How can blockchain be used to authenticate IoT device credentials?</h3>
+            <h3 style='color: #555186'>Blockchain Use Cases</h3>
             <p>
               Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt.
             </p>
-            <p>
-              Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
-            </p>
-            <p>
-              bro idek
-            </p>
+            <div class="features-content">
+              <ul>
+                <li style='padding-right: 4px;
+                list-style: none;
+                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i> Use Case 1</li>
+                <li style='padding-right: 4px;
+                list-style: none;
+                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i> Use Case 2</li>
+                <li style='padding-right: 4px;
+                list-style: none;
+                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i> Use Case 3</li>
+                <li style='padding-right: 4px;
+                list-style: none;
+                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i> Use Case 4</li>
+                <li style='padding-right: 4px;
+                list-style: none;
+                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i> Use Case 5</li>
+              </ul>
+            </div>
           </div>
+
         </div>
+
+      </div>
     </section><!-- End Features Section -->
 
 
@@ -289,7 +303,7 @@
       <div class="container" data-aos="zoom-in">
 
         <header class="section-header">
-          <h3>Smart People Who Agree Us?</h3>
+          <h3>What Smart People are Saying</h3>
         </header>
 
         <div class="row justify-content-center">
@@ -300,10 +314,20 @@
 
                 <div class="swiper-slide">
                   <div class="testimonial-item">
-                    <h3>Scholar Name here</h3>
-                    <h4>Paper Title</h4>
+                    <h3>Meltem Demirors</h3>
+                    <h4>Chief Strategy Officer of CoinShares & Lecturer at the University of Oxford</h4>
                     <p>
-                      Quote from paper that validates [IoT device] authentication as a use case for blockchain 
+                      "Blockchain has the potential to redefine the relationship between technology and the individual, and to create a new set of social, political and economic tools that provide privacy, sovereignty and user choice while increasing connectivity, efficiency and access." 
+                    </p>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <h3>David Shrier</h3>
+                    <h4>Entrepreneur & Professor at Imperial College London</h4>
+                    <p>
+                      "The convergence of blockchain with other new-generation technologies could help our existing mechanisms of organising human society keep pace with the changes introduced by the technologies themselves." 
                     </p>
                   </div>
                 </div><!-- End testimonial item -->
@@ -311,9 +335,9 @@
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <h3>Scholar Name here</h3>
-                    <h4>Paper Title</h4>
+                    <h4>Title + Institution</h4>
                     <p>
-                      Quote from paper that validates [IoT device] authentication as a use case for blockchain 
+                      Quote that validates the potential of blockchain 
                     </p>
                   </div>
                 </div><!-- End testimonial item -->
@@ -321,19 +345,9 @@
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <h3>Scholar Name here</h3>
-                    <h4>Paper Title</h4>
+                    <h4>Title + Institution</h4>
                     <p>
-                      Quote from paper that validates [IoT device] authentication as a use case for blockchain 
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <h3>Scholar Name here</h3>
-                    <h4>Paper Title</h4>
-                    <p>
-                      Quote from paper that validates [IoT device] authentication as a use case for blockchain 
+                      Quote that validates the potential of blockchain 
                     </p>
                   </div>
                 </div><!-- End testimonial item -->
