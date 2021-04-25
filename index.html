@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>authChain</title>
+  <title>BC4Auth</title>
   <meta content="An explanation of how cybersecurity authentication could be improved by implementing blockchain technology" name="description">
 
   <!-- Favicons -->
@@ -31,7 +31,7 @@
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">ELI5 | AuthChain</a></h1>
+      <h1 class="logo me-auto"><a href="index.html">ELI5 | BC4Auth</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -68,6 +68,11 @@
 
         <div class="col-lg-6 intro-img order-lg-last order-first" data-aos="zoom-out" data-aos-delay="200">
           <img src="" alt="" class="img-fluid">
+          <br>
+          <br>
+          <br>
+          <br>
+          <p style='color: #696592'><i><strong>Note:</strong> ELI5 is an internet colloquialism for explaining something in a simple manner to a layperson, not an actual 5-year old</i></p>
         </div>
       </div>
 
@@ -93,7 +98,7 @@
             <div class="about-content" data-aos="fade-left" data-aos-delay="100">
               <h2>The Problem</h2>
               <h3>Centralized authentication systems are lacking in security and diversification</h3>
-              <p>With traditional authentication mechanisms, organizations store personal identifiable information (PII) on centrally managed servers and systems. 
+              <p>With traditional authentication mechanisms, organizations store personal identifiable information on centrally managed servers and systems. 
                  As a result, users must put faith in these organizations to adequately protect their sensitive data. </p>
               <p>In theory, this practice is acceptable until these organizations 
                 <a href="https://www.forbes.com/sites/maggiemcgrath/2016/09/08/wells-fargo-fined-185-million-for-opening-accounts-without-customers-knowledge/?sh=6ca4741651fc">misuse user data</a>,
@@ -119,12 +124,12 @@
               </div>
     
               <div class="col-lg-3 col-6 text-center">
-                <a href="https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/reports/Unit_42/2020-unit-42-IoT-threat-report.pdf" style='font-size:2em'>57%</a>
-                <p style='color: #696592'>of IoT Devices are Unsecured</p>
+                <a href="https://www.ic3.gov/Media/PDF/AnnualReport/2019_IC3Report.pdf" style='font-size:2em; color: #0a98c0;'>$3.5 Billion</a>
+                <p style='color: #696592'>Lost to Global Cybercrime in 2019</p>
               </div>
 
               <div class="col-lg-3 col-6 text-center">
-                <a href="https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/reports/Unit_42/2020-unit-42-IoT-threat-report.pdf" style='font-size:2em'>98%</a>
+                <a href="https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/reports/Unit_42/2020-unit-42-IoT-threat-report.pdf" style='font-size:2em; color: #0a98c0;'>98%</a>
                 <p style='color: #696592'>of IoT Data are Unencrypted</p>
               </div>
 
@@ -149,8 +154,8 @@
           <div class="col-lg-7 col-md-6">
             <div class="about-content" data-aos="fade-right" data-aos-delay="100">
               <h2>A Potential Solution</h2>
-              <h3>A decentralized database relying on cryptography to ensure data integrity and protect user's identities</h3>
-              <p>Think of a ledger that maintains multiple copies of itself, all of which automatically update in unison. If one copy is tampered with, all other copies could highlight this discrepancy so that the database could be resynchronized—and therefore secured—before continuing. Not only would this prevent unauthorized access of the database, but it also maintains the integrity of the data by ensuring it hasn't been tampered with.</p>
+              <h3>A decentralized database relying on cryptography to ensure data integrity</h3>
+              <p>Think of a ledger that maintains multiple copies of itself, all of which automatically update in unison. If one copy is tampered with, all other copies could highlight this discrepancy so that the database could be resynchronized—and therefore secured—before continuing. Not only would this prevent unauthorized access of the database but it also maintains the integrity of the data by ensuring it hasn't been tampered with.</p>
             </div>
           </div>
 
@@ -176,9 +181,9 @@
             <img src="https://economictimes.indiatimes.com/thumb/msid-81993233,width-1200,height-900,resizemode-4,imgsize-753834/blockchain-getty.jpg?from=mdr" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0" data-aos="fade-left" data-aos-delay="150">
-            <h3 style='color: #555186'>Blockchain Basics</h3>
+            <h3 style='color: #555186'><strong>Blockchain Basics</strong></h3>
             <p>
-              Blockchain technology is essentially a database or ledger that maintains copies of itself which are stored on multiple devices (ie, servers, computers, IoT devices) within a specific network. Each of these devices is a <i>node</i>.
+              Blockchain technology is essentially a database or ledger that maintains copies of itself that are stored across multiple devices (ie servers, computers, IoT devices) within a specific network. Each of these devices is a <i>node</i>.
             </p>
             <p>
               The nodes hosting the ledger are distributed to varying extents so that they exist independently of one another. In order for updates to be pushed to the ledger, these nodes must verify the proposed changes. To do so, the majority of the nodes must agree that the proposed changes are legitimate.
@@ -206,26 +211,26 @@
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-aos="zoom-in" data-aos-delay="100">
             <div class="box">
               <h4 class="title">Crpytographic Keys/Hashs</h4>
-              <p class="description">Only those equipped with a specific private key can decrypt (and encrypt) specific data. In cases where you care more about the integrity of the data as opposed to the content of the data itself, hashing can be used since it represents the authenticity of the encrypted data without having to unencrypt it.</p>
+              <p class="description">Only those equipped with a specific private key can decrypt (and encrypt) specific data. In cases where you care more about the integrity of the data as opposed to the content of the data itself, hashing can be used since this mechanism represents the authenticity of the encrypted data—akin to a fingerprint—without having to unencrypt it.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="box">
               <h4 class="title">Merkle Trees</h4>
-              <p class="description">The output from one equation is the input for the next and so forth. The result is a chain of equations linked together. If any one equation is altered the entire chain is affected. This is the process behind hashing blocks which creates the chain itself & enables immutability.</p>  
+              <p class="description">The output from one equation is the input for the next equation and so forth. The result is a chain of equations linked together. If any one equation is altered the entire chain is affected. This is the process behind hashing blocks which creates the chain itself & enables immutability.</p>  
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="box">
               <h4 class="title">Distributed Ledger</h4>
-              <p class="description">Centralized ledgers introduce a single point of failure since hacking a part of the network often allows you to breach other parts as well. By distributing the nodes away from a centralized entity it increases the difficulty of hijacking the network.</p>
+              <p class="description">Centralized ledgers introduce a single point of failure since hacking a part of the network often allows you to breach other parts as well. By distributing the nodes away from a centralized entity it increases the difficulty of hijacking the entire network.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow" data-aos="zoom-in" data-aos-delay="100">
             <div class="box">
               <h4 class="title">256-Bit Encryption</h4>
-              <p class="description">It would theoretically take the average computer a few decades to crack the cryptography algorithm that protects the blockchain.</p>
+              <p class="description">It would theoretically take the average computer multiple decades just to crack the cryptography algorithm protecting the blockchain.</p>
             </div>
           </div>
 
@@ -255,31 +260,29 @@
         <div class="row feature-item mt-5 pt-5">
           
           <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="https://inc42.com/wp-content/uploads/2019/12/blockchain-facts.jpg" class="img-fluid" alt="">
+            <!-- <img src="https://inc42.com/wp-content/uploads/2019/12/blockchain-facts.jpg" class="img-fluid" alt=""> -->
+            <img src="https://github.com/JTcode42/seniorCap/blob/website/website/Vertical%20Blockchain%20image.jpeg?raw=true" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="150">
-            <h3 style='color: #555186'>Blockchain Use Cases</h3>
-            <p>
-             The potential uses for this technology are nearly endless. Below are some highly beneficial use cases.
-            </p>
+            <h3 style='color: #555186'><strong>Potential Use Cases</strong></h3>
             <div class="features-content">
               <ul>
                 <li style='padding-right: 4px;
                 list-style: none;
-                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i> Securing user credentials - By implementing an authentication blockchain, organizations would vastly improve their security and better protect user login credentials by moving away from centralized identity management. The risk of an organization’s central database of user login data being stolen during mass data breaches would be mitigated instantly upon the switch to a decentralized model.</li>
+                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i> <strong><i>Securing User Credentials</i></strong><br>By implementing an authentication blockchain, organizations would vastly improve their security and better protect user login credentials by moving away from centralized identity management. The risk of an organization’s central database of user login data being stolen during mass data breaches would be mitigated instantly upon the switch to a decentralized model.</li>
                 <li style='padding-right: 4px;
                 list-style: none;
-                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i> Improved digital rights management – Companies could vastly improve the distribution of software keys and online sales by tying products to specific users which are stored on an immutable, decentralized ledger. </li>
+                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i> <strong><i>Digital Rights Management</i></strong><br>Companies could vastly improve the distribution of software keys and online sales by tying products to specific users which are stored on an immutable, decentralized ledger. </li>
                 <li style='padding-right: 4px;
                 list-style: none;
-                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i> Reducing organizational bandwidth burden – Authentication blockchain eliminates the need for centralized, bandwidth hungry authentication services by requiring processing requests to be distributed to end users, ultimately lightening an organization’s bandwidth requirements.</li>
+                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i> <strong><i>Reducing organizational bandwidth burden</i></strong><br>Authentication blockchain eliminates the need for centralized, bandwidth hungry authentication services by requiring processing requests to be distributed to end users, ultimately lightening an organization’s bandwidth requirements.</li>
                 <li style='padding-right: 4px;
                 list-style: none;
-                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i> Tax regulation – Certain kinds of local and national business operations come under greater scrutiny from state and federal governments given the kind of business they operate. Blockchain implementation could better help governments regulate taxes and either prove or disprove compliance. It would also be a credit to businesses who are in compliance because it would make it easier to verify.</li>
+                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i> <strong><i>Tax Regulation</i></strong><br>Certain kinds of local and national business operations come under greater scrutiny from state and federal governments given the kind of business they operate. Blockchain implementation could better help governments regulate taxes and either prove or disprove compliance. It would also be a credit to businesses who are in compliance because it would make it easier to verify.</li>
                 <li style='padding-right: 4px;
                 list-style: none;
-                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i>Internet of Things (IoT) Security – Better security for smart devices and other integrated technologies used in people's homes or other such places. Less vulnerable to centralized attacks.</li>
+                padding-bottom: 10px;'><i class="bi bi-check-circle" style='color: #1bb1dc; font-size: 20px;'></i> <strong><i>Internet of Things Security</i></strong><br>Better security for smart devices and other integrated technologies used in people's homes or other such places. Less vulnerable to centralized attacks.</li>
               </ul>
             </div>
           </div>
@@ -355,7 +358,7 @@
       <div class="container" data-aos="fade-up">
         <header class="section-header">
           <h3>Blockchain Playground</h3>
-          <p>How to build a blockchain in Python. The below example pertains to an authentication use case.</p>
+          <p>Now that its clear what blockchain is, how it works, what it can be used for, let's take a look under the hood to gain a deeper understanding of the technical mechanics that give blockchain its unique affordances. The below example is for an authentication use case, but could be modified for other use cases.</p>
         </header>
 
         <ul class="faq-list" data-aso="fade-up" data-aos-delay="100">
@@ -423,7 +426,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <p><i>Powered by <a href="https://getbootstrap.com/">Bootstrap</a> ⸺ Last updated: April 19th, 2021 with </i>♡</p>
+      <p><i>Powered by <a href="https://getbootstrap.com/">Bootstrap</a> ⸺ Last updated: April 26th, 2021 with </i>♡</p>
     </div>
   </footer><!-- End Footer -->
 
